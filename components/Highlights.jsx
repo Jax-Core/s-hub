@@ -17,11 +17,11 @@ const Skills = () => {
           <div className='m-auto'>
                 <Image src={Dashboard} width='96px' height='96px' alt='/' />
               </div>
-            <div class="flex items-center justify-center mb-3">
-              <h2 class="text-3xl title-font font-semibold">Large variety of setups</h2>
+            <div className="flex items-center justify-center mb-3">
+              <h2 className="text-3xl title-font font-semibold">Large variety of setups</h2>
             </div>
-            <div class="flex-grow">
-              <p class="leading-relaxed text-base">
+            <div className="flex-grow">
+              <p className="leading-relaxed text-base">
                 We're no strangers to love
                 You know the rules and so do I (do I)
                 A full commitment's what I'm thinking of
@@ -30,16 +30,16 @@ const Skills = () => {
           </div>
         </div>
 
-        <div class="p-4 md:w-1/3">
+        <div className="p-4 md:w-1/3">
           <div className="flex rounded-3xl h-full shadow-[0px_8px_20px_3px_#D8DEE9] p-8 flex-col">
           <div className='m-auto'>
                 <Image src={Download} width='96px' height='96px' alt='/' />
               </div>
-            <div class="flex items-center justify-center mb-3">
-              <h2 class="text-3xl title-font font-semibold">Simple Instllation</h2>
+            <div className="flex items-center justify-center mb-3">
+              <h2 className="text-3xl title-font font-semibold">Simple Instllation</h2>
             </div>
-            <div class="flex-grow">
-              <p class="leading-relaxed text-base">
+            <div className="flex-grow">
+              <p className="leading-relaxed text-base">
               I just wanna tell you how I'm feeling
               Gotta make you understand
               </p>
@@ -47,16 +47,16 @@ const Skills = () => {
           </div>
         </div>
 
-        <div class="p-4 md:w-1/3">
+        <div className="p-4 md:w-1/3">
           <div className="flex rounded-3xl h-full shadow-[0px_8px_20px_3px_#D8DEE9] p-8 flex-col">
           <div className='m-auto'>
                 <Image src={Send} width='96px' height='96px' alt='/' />
               </div>
-            <div class="flex items-center justify-center mb-3">
-              <h2 class="text-3xl title-font font-semibold">Open Submissions</h2>
+            <div className="flex items-center justify-center mb-3">
+              <h2 className="text-3xl title-font font-semibold">Open Submissions</h2>
             </div>
-            <div class="flex-grow">
-              <p class="leading-relaxed text-base">
+            <div className="flex-grow">
+              <p className="leading-relaxed text-base">
                 Never gonna give you up
                 Never gonna let you down
                 Never gonna run around and desert you
