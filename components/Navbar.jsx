@@ -49,13 +49,13 @@ const Navbar = () => {
               className='cursor-pointer'
             />
             <span className='flex justify-between items-baseline'>
-              <span className='px-2 text-4xl font-bold md:flex'>S Hub </span>
+              <span className='px-1 text-4xl font-bold md:flex'>S Hub </span>
               <span className='text-base md:flex'>by JaxCore</span>
             </span>
           </a>
         </Link>
         <div className='mr-auto'>
-          <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
+          <ul style={{ color: `${linkColor}` }} className=' md:flex'>
             <li className='text-2xl hover:border-b hover:text-anchorman'>
               <Link href='/'>Home</Link>
             </li>
