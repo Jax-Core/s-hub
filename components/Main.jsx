@@ -19,7 +19,7 @@ const Main = () => {
           <a 
             className="py-1 px-4 
                   text-2xl font-semibold text-anchorman
-                  focus:outline-none rounded
+                  focus:outline-none rounded-3xl
                   bg-blue
                   border-2 border-r-4 border-b-4 border-anchorman
                   "
