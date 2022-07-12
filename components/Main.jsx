@@ -1,8 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Main = () => {
   return (
@@ -18,16 +15,17 @@ const Main = () => {
             setups easily.
           </p>
           <Link href="/">
-            <a
-              className="mt-12 py-1 px-4 
+  
+              <button className="
                   text-2xl font-semibold text-anchorman
-                  focus:outline-none rounded-3xl
-                  bg-blue
+                  mt-12 py-2 px-12
+                  rounded-3xl
+                  bg-[#ECEFF4]
                   border-2 border-r-4 border-b-4 border-anchorman
-                  "
-            >
-              Browse
-            </a>
+                  focus:outline-none md:mt-0"
+              >
+                Browse
+              </button>
           </Link>
         </div>
       </div>
