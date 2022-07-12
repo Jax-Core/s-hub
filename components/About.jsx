@@ -11,7 +11,7 @@ const About = () => {
 
         <h2 className='py-6 text-6xl font-bold pb-20'>About S Hub</h2>
 
-          <p className='py-2 max-w-screen-sm'>
+          <p className='py-2 '>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Ac nunc pharetra, cras egestas platea commodo, fusce amet eleifend. 
           Metus, a, vitae sit pretium nulla non.
