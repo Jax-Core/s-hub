@@ -9,7 +9,7 @@ const About = () => {
       <div className='max-w-screen-2xl m-auto md:grid grid-cols-3 gap-8'>
         <div className='col-span-2'>
 
-          <h2 className='py-4'>About S Hub</h2>
+        <h2 className='py-6 text-6xl font-bold pb-20'>About S Hub</h2>
 
           <p className='py-2 max-w-screen-sm'>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
