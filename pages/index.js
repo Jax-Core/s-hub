@@ -3,7 +3,6 @@ import About from '../components/About'
 import Main from '../components/Main'
 import Highlights from '../components/Highlights'
 
-
 export default function Home() {
   return (
     <div>
@@ -11,7 +10,7 @@ export default function Home() {
         <title>S Hub by JaxCore </title>
         <meta name="description" content="Description goes here" />
         <link rel="icon" href="/fav.png" />
-      </Head>          
+      </Head>    
     <Main />
     <Highlights />
     <About />
