@@ -4,7 +4,7 @@ import Dashboard from '../public/assets/Dashboard.svg';
 import Download from '../public/assets/Download.svg'
 import Send from '../public/assets/Send.svg';
 
-const Skills = () => {
+const Highlights = () => {
   return (
     <div id='skills' className='w-full p-2'>
       <div className='max-w-screen-2xl mx-auto flex flex-col justify-center h-full'>
@@ -73,4 +73,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default Highlights;
