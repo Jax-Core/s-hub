@@ -10,7 +10,7 @@ import NavLogo from '../public/assets/navLogo.png'
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg] = useState('#ecf0f3');
+  const [navBg] = useState('#ffff');
   const [linkColor] = useState('#4C566A');
 
 
