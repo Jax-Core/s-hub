@@ -69,7 +69,8 @@ const Navbar = () => {
               <Link href='/'>Core</Link>
             </li>
           </ul>
-          
+
+        </div>
 
         {/* Submit button */}
         <div className="flex justify-center items-center flex-shrink-0 ">
