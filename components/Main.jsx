@@ -15,8 +15,9 @@ const Main = () => {
           <p className='py-4 text-gray-600 sm:max-w-[70%] m-auto'>
           A unique tool which allows you to install whole Windows desktop setups easily.
           </p>
-          <a href='/'
-            class="py-1 px-4 
+          <Link href='/'>
+          <a 
+            className="py-1 px-4 
                   text-2xl font-semibold text-anchorman
                   focus:outline-none rounded
                   bg-blue
@@ -25,7 +26,7 @@ const Main = () => {
           >
             Browse
           </a>
-
+          </Link>
           
         </div>
       </div>

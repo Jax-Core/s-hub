@@ -4,31 +4,15 @@ import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-// import { useRouter } from 'next/router';
+import { useRouter } from 'next/router';
 import NavLogo from '../public/assets/navLogo.png'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState('#ecf0f3');
-  const [linkColor, setLinkColor] = useState('#4C566A');
-  // const [position, setPosition] = useState('fixed')
-  // const router = useRouter();
+  const [navBg] = useState('#ecf0f3');
+  const [linkColor] = useState('#4C566A');
 
-  // useEffect(() => {
-  //   if (
-  //     router.asPath === '/property' ||
-  //     router.asPath === '/crypto' ||
-  //     router.asPath === '/netflix' ||
-  //     router.asPath === '/twitch'
-  //   ) {
-  //     setNavBg('transparent');
-  //     setLinkColor('#ecf0f3');
-  //   } else {
-  //     setNavBg('#ecf0f3');
-  //     setLinkColor('#1f2937');
-  //   }
-  // }, [router]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -76,13 +60,13 @@ const Navbar = () => {
               <Link href='/'>Home</Link>
             </li>
             <li className='ml-10 text-2xl hover:border-b hover:text-anchorman'>
-              <Link href='/#about'>Setups</Link>
+              <Link href='/'>Setups</Link>
             </li>
             <li className='ml-10 text-2xl hover:border-b hover:text-anchorman'>
-              <Link href='/#skills'>FAQ</Link>
+              <Link href='/'>FAQ</Link>
             </li>
             <li className='ml-10 text-2xl hover:border-b hover:text-anchorman'>
-              <Link href='/#projects'>Core</Link>
+              <Link href='/'>Core</Link>
             </li>
           </ul>
           {/* Hamburger Icon */}
@@ -97,7 +81,8 @@ const Navbar = () => {
 
         {/* Submit button */}
         <div className="flex justify-center items-center flex-shrink-0 ">
-        <a href='/'
+          <Link href='/'>
+        <a 
             className="py-1 px-4 
                   text-2xl font-semibold text-anchorman
                   focus:outline-none rounded
@@ -107,6 +92,7 @@ const Navbar = () => {
           >
             Submit
           </a>
+          </Link>
 				</div>
       </div>
 
