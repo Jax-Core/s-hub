@@ -9,7 +9,7 @@ const Main = () => {
     <div id='home' className='w-full h-screen text-center'>
       <div className='bg-black max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
         <div >
-          <h1 className='py-4 text-[84px] max-w-[800px]'>
+          <h1 className='py-4 text-[84px] max-w-[1024px]'>
             Get, beautiful setups in mere <span className='text-[#D08770]'> seconds.</span>
           </h1>
           <p className='py-4 text-gray-600 sm:max-w-[70%] m-auto'>
