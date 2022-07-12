@@ -6,7 +6,7 @@ import Send from '../public/assets/Send.svg';
 
 const Skills = () => {
   return (
-    <div id='skills' className='w-full lg:h-screen p-2'>
+    <div id='skills' className='w-full p-2'>
       <div className='max-w-screen-2xl mx-auto flex flex-col justify-center h-full'>
 
         <h2 className='py-6 text-6xl font-bold pb-20'>Main Highlights</h2>
