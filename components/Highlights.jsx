@@ -22,7 +22,7 @@ const Highlights = () => {
                 </h2>
               </div>
               <div className="flex-grow">
-                <p className="leading-relaxed text-base">
+                <p className="leading-relaxed text-2xl">
                   We&apos;re no strangers to love You know the rules and so do I (do
                   I) A full commitment&apos;s what I&apos;m thinking of You wouldn&apos;t get
                   this from any other guy
@@ -42,7 +42,7 @@ const Highlights = () => {
                 </h2>
               </div>
               <div className="flex-grow">
-                <p className="leading-relaxed text-base">
+                <p className="leading-relaxed text-2xl">
                   I just wanna tell you how I&apos;m feeling Gotta make you
                   understand
                 </p>
@@ -61,7 +61,7 @@ const Highlights = () => {
                 </h2>
               </div>
               <div className="flex-grow">
-                <p className="leading-relaxed text-base">
+                <p className="leading-relaxed text-2xl">
                   Never gonna give you up Never gonna let you down Never gonna
                   run around and desert you Never gonna make you cry Never gonna
                   say goodbye Never gonna tell a lie and hurt you
