@@ -69,15 +69,7 @@ const Navbar = () => {
               <Link href='/'>Core</Link>
             </li>
           </ul>
-          {/* Hamburger Icon */}
-          <div
-            style={{ color: `${linkColor}` }}
-            onClick={handleNav}
-            className='md:hidden'
-          >
-            <AiOutlineMenu size={25} />
-          </div>
-        </div>
+          
 
         {/* Submit button */}
         <div className="flex justify-center items-center flex-shrink-0 ">
