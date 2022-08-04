@@ -1,69 +1,97 @@
-import Image from "next/image";
-import Link from "next/link";
-import React, { useState, useEffect } from "react";
-import NavLogo from "../public/assets/navLogo.png";
-
+import Link from 'next/link';
+import React, { useState, useEffect } from 'react';
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import Image from 'next/image'
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const [shadow, setShadow] = useState(false);
-  const [navBg] = useState("#ffff");
-  const [linkColor] = useState("#4C566A");
+  const [color, setColor] = useState('transparent');
+  const [textColor, setTextColor] = useState('#4C566A');
 
   const handleNav = () => {
     setNav(!nav);
   };
 
   useEffect(() => {
-    const handleShadow = () => {
+    const changeColor = () => {
       if (window.scrollY >= 90) {
-        setShadow(true);
-      } else {
-        setShadow(false);
+        setColor('#ffffff');
       }
     };
-    window.addEventListener("scroll", handleShadow);
+    window.addEventListener('scroll', changeColor);
   }, []);
 
   return (
     <div
-      style={{ backgroundColor: `${navBg}` }}
-      className={
-        shadow
-          ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300"
-          : "fixed w-full h-20 z-[100]"
-      }
+      style={{ backgroundColor: `${color}` }}
+      className='fixed left-0 top-0 w-full z-10 border-b'
     >
-      <header className="text-gray-600 body-font">
-        <div className="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
-          <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <Link href='/'>
-              <Image src={NavLogo} alt='Nav Logo'></Image>
-            </Link>
-            <span className="flex flex-row ml-1 items-baseline gap-1">
-              <span className="text-3xl font-bold">S Hub</span>
-              <span className="text-base">by JaxCore</span>
-
-            </span>
+      <div className='m-auto flex justify-between py-1 px-6 items-center text-white'>
+      <Link href={"/"}>
+          <a style={{ color: `${textColor}` }} className="flex flex-row gap-1 items-center justify-center">
+            <Image src={`/../public/assets/navLogo.png`} width={`48px`} height={`48px`}></Image>
+          <div className="self-center">
+            <span className="text-[#4C566A] text-2xl font-extrabold whitespace-nowrap md:text-3xl">S Hub</span>
+            <span className="text-sm ml-1 md:text-base">by JaxCore</span>
+          </div>
           </a>
-          <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-2xl justify-center">
-            <a className="mr-10">Home</a>
-            <a className="mr-10">Setup</a>
-            <a className="mr-10">FAQ</a>
-            <a className="mr-10">Core</a>
-          </nav>
-          <Link href='/'>
-            <button className="
-                    text-2xl font-semibold text-anchorman
-                    rounded-3xl
-                    bg-[#ECEFF4]
-                    border-2 border-r-4 border-b-4 border-anchorman
-                    py-1 px-5 focus:outline-none hover:bg-gray-200 text-base mt-4 md:mt-0"
-            >
-              Submit
-            </button>
-          </Link>
+        </Link>
+        <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
+          <li className='p-4'>
+            <Link href='/'>Home</Link>
+          </li>
+          <li className='p-4'>
+            <Link href='/setups'>Setups</Link>
+          </li>
+          <li className='p-4'>
+            <Link href='/'>FAQ</Link>
+          </li>
+          <li className='p-4'>
+            <Link href='/'>Core</Link>
+          </li>
+        </ul>
+
+        <button className='hidden sm:flex text-[#4C566A] font-semibold py-1 px-2 border border-[#4C566A] border-b-4 border-r-4 rounded rounded-xl '>
+          <Link href={'/submit'}>Submit</Link>
+          </button>
+
+        {/* Mobile Button */}
+        <div onClick={handleNav} className='block sm:hidden z-10'>
+          {nav ? (
+            <AiOutlineClose size={20} style={{ color: `${textColor}` }} />
+          ) : (
+            <AiOutlineMenu size={20} style={{ color: `${textColor}` }} />
+          )}
         </div>
-      </header>
+
+        
+        {/* Mobile Menu */}
+        <div
+          className={
+            nav
+              ? 'sm:hidden absolute text-[#4C566A] top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-white text-center ease-in duration-300'
+              : 'sm:hidden absolute text-[#4C566A] top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen text-center ease-in duration-300'
+          }
+        >
+          <ul>
+            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+              <Link href='/'>Home</Link>
+            </li>
+            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+              <Link href='/setups'>Setups</Link>
+            </li>
+            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+              <Link href='/faq'>FAQ</Link>
+            </li>
+            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+              <Link href='/core'>Core</Link>
+            </li>
+            <button className='text-[#4C566A] mt-4 text-2xl font-semibold py-2 px-4 border border-[#4C566A] rounded rounded-xl '>Submit</button>
+          </ul>
+          
+
+
+        </div>
+      </div>
     </div>
   );
 };

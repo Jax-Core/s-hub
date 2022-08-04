@@ -3,7 +3,7 @@ import About from '../components/home/About'
 import Main from '../components/home/Main'
 import Highlights from '../components/home/highlights/Highlights'
 
-export default function Home() {
+export default function Setups() {
   return (
     <div>
       <Head>

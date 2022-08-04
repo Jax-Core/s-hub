@@ -4,11 +4,6 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
-    colors: {
-      'anchorman': '#2E3440'
-
-  },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
 }
 }
