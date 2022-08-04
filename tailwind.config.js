@@ -4,6 +4,6 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-  plugins: [require('flowbite/plugin')],
-}
+    plugins: [require('flowbite/plugin')],
+  },
 }

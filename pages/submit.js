@@ -8,8 +8,8 @@ export default function Submit() {
         <title>S Hub by JaxCore </title>
         <meta name="description" content="Description goes here" />
         <link rel="icon" href="/fav.png" />
-      </Head>    
-<Main/>
+      </Head>
+      <Main />
     </div>
   )
 }

@@ -10,10 +10,10 @@ export default function Home() {
         <title>S Hub by JaxCore </title>
         <meta name="description" content="Description goes here" />
         <link rel="icon" href="/fav.png" />
-      </Head>    
-    <Main />
-    <Highlights />
-    <About />
+      </Head>
+      <Main />
+      <Highlights />
+      <About />
     </div>
   )
 }
