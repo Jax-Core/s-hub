@@ -1,8 +1,7 @@
 import Head from 'next/head'
-import Main from '../components/home/Main'
-import Highlights from '../components/home/highlights/Highlights'
+import FAQs from '../components/faq/FAQs'
 
-export default function Home() {
+export default function FAQ() {
   return (
     <div>
       <Head>
@@ -10,8 +9,7 @@ export default function Home() {
         <meta name="description" content="Description goes here" />
         <link rel="icon" href="/fav.png" />
       </Head>
-      <Main />
-      <Highlights />
+      <FAQs />
     </div>
   )
 }

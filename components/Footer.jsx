@@ -7,46 +7,51 @@ import { FaDiscord } from 'react-icons/fa'
 const Footer = () => {
   return (
     <footer className="p-4 sm:p-6">
-      <div className="flex flex-col items-center gap-1 md:flex-row md:justify-between">
+      <div className="flex items-center gap-1 flex-row justify-between">
         <Link href={'/'}>
-          <a className="flex flex-row gap-1 items-center justify-center">
+          <a className="flex flex-row gap-1 items-center justify-center mr-auto">
             <Image
-              src={`/../public/assets/navLogo.png`}
-              width={`48px`}
-              height={`48px`}
+              src={`/assets/JaxCore_Logo.png`}
+              width={`25px`}
+              height={`25px`}
               alt="Navbar Logo"
             ></Image>
             <div className="self-center">
-              <span className="text-[#4C566A] text-2xl font-extrabold whitespace-nowrap md:text-3xl">
-                S Hub
+              <span className="text-xl font-semibold whitespace-nowrap">
+                JaxCore
               </span>
-              <span className="text-sm ml-1 md:text-base">by JaxCore</span>
             </div>
           </a>
         </Link>
 
-        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+        <span className="text-sm text-gray-400">
           © 2022{' '}
-          <a href="#" className="hover:underline">
+          <a href="#" target={`_blank`} className="hover:underline">
             S-Hub™
           </a>
           . All Rights Reserved.
         </span>
-        <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-          <a
-            href="#"
-            className="text-gray-500 flex flex-row items-center justify-center gap-1 hover:underline"
-          >
-            <FiGithub fontSize={`1.25rem`} />
-            <span className="text-base font-semibold">Github</span>
-          </a>
-          <a
-            href="#"
-            className="text-gray-500 flex flex-row items-center justify-center gap-1 hover:underline"
-          >
-            <FaDiscord fontSize={`1.5rem`} />
-            <span className="text-base font-semibold">Discord</span>
-          </a>
+
+        <div className="flex ml-auto divide-x divide-gray-500">
+          <Link href="https://github.com/Jax-Core/S-Hub">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pr-3 text-gray-400 hover:text-white ease-in-out duration-300"
+            >
+              <FiGithub fontSize={`1.25rem`} />
+            </a>
+          </Link>
+
+          <Link href="https://discord.gg/JmgehPSDD6">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pl-3 text-gray-400 hover:text-white ease-in-out duration-300"
+            >
+              <FaDiscord fontSize={`1.25rem`} />
+            </a>
+          </Link>
         </div>
       </div>
     </footer>
