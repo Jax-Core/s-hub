@@ -312,7 +312,6 @@ img, .no-select {
 /* ------------------------------------ 1 ----------------------------------- */
 
 #s1 {
-  display: block;
   max-height: calc(100vh - var(--divider-size) * 2 + 1px);
 }
 
@@ -320,8 +319,9 @@ img, .no-select {
 .orb {
   width: calc(100% / (var(--marquee-count) * 2) - 20px * 2);
   height: calc((100vw / var(--marquee-count) - 20px * 2) * 9 / 16);
-  background: #999;
+  background: var(--color-fg);
   border-radius: var(--rounding-size);
+  border: calc(var(--size-section_border)*4) solid var(--color-fg_border);
   display: inline-block;
   margin: 0 20px;
   float: left;
@@ -332,6 +332,7 @@ img, .no-select {
   width: 100vw;
   min-height: calc(100vh - var(--divider-size) * 2);
   display:flex;
+  position: absolute;
   flex-direction: column;
   justify-content: end;
 }
@@ -374,13 +375,12 @@ img, .no-select {
 /* content */
 .header-content {
   position: relative;
-  top: calc((100vh - var(--divider-size) * 2) * -1 + 20vh);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 0 20vh 0;
   box-sizing: border-box;
   max-width: 1517px;
   width: 80%;
@@ -422,7 +422,7 @@ img, .no-select {
   align-items: center;
   justify-content: center;
   background-image: var(--coregrad);
-  box-shadow: 0px 0px 12px 0px rgba(var(--color-accent-2), 0.5);
+  box-shadow: 0px 0px 12px 0px rgba(var(--color-accent-1), 0.5);
 }
 .header-content > a * {
   font-size: 1.750rem;
@@ -433,6 +433,12 @@ img, .no-select {
   font-size: 1.312rem;
   position: relative;
   left: calc(1.312rem / 2);
+}
+
+@media only screen and (max-width: 1300px) {
+  .header-content {
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -455,9 +461,18 @@ img, .no-select {
   z-index: -101;
 }
 
+.background-image img {
+  position: relative;
+  left: -200px;
+  width: 963.92px;
+  transition: all 2s cubic-bezier(0.22, 1, 0.36, 1) 0.1s;
+  translate: -20%;
+  filter: drop-shadow(0px 2px 10px rgba(var(--color-accent-1), 0.5));
+}
+
 #s2.body-container-visible .background-image img {
   translate: 0;
-  rotate: 10deg;
+  animation: shubanim 3s cubic-bezier(0.76, 0, 0.24, 1) 0ms infinite;
 }
 
 .about-core h2 {
