@@ -5,10 +5,137 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- <meta name="twitter:title" content="JaxCore for Windows" />
+	<meta name="twitter:description" content="JaxCore is a beautiful, functional, customizable set of tools and widgets to spice up your Windows desktop. JaxCore runs on Rainmeter, so there's no limit for customization." />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/Jax-Core/jax-core.github.io/main/img/Embed.png" />
+	<meta property="og:title" content="JaxCore" />
+	<meta property="og:image" content="https://raw.githubusercontent.com/Jax-Core/jax-core.github.io/main/img/Embed.png" />
+	<meta property="og:image:type" content="image/png" />
+	<meta property="og:image:width" content="1889" />
+	<meta property="og:image:height" content="883" />
+	<meta property="og:image:alt" content="A shiny image of JaxCore" /> -->
+	<link rel="stylesheet" href="/css/styles.css" />
+	<link rel="icon" href="/img/S-Hub Logo.png" type="image/png" />
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+	<title>JaxCore S-Hub</title>
+	<meta name="description"
+		content="S-Hub is a place faithful to themers, where everyone can share and explore freely.">
+	<script defer src="js/main.js"></script>
 </head>
 
 <body>
-	You've discovered a WIP!
+	<!-- ----------------------------- Normal nav ------------------------------ -->
+	<nav class="" id="navbar-container">
+
+		<a class="branding">
+			<svg viewBox="0 0 135.46667 135.46667">
+				<g>
+					<path
+						d="m 36.859942,37.859945 -8.5e-5,28.87337 a 2.4142236,2.4142236 112.50008 0 1 -0.70711,1.707107 L 22.13032,82.462849 a 1,1 -180 0 1 -1.414214,0 L 6.69368,68.440424 a 0.99999998,0.99999998 89.999999 0 1 0,-1.414214 L 36.152838,37.567052 a 0.41421183,0.41421183 22.500084 0 1 0.707104,0.292893 z" />
+					<path
+						d="m 98.581809,97.60676 9.2e-5,-28.87338 a 2.4142244,2.4142244 112.50009 0 1 0.70711,-1.707107 L 113.31143,53.003851 a 0.99999997,0.99999997 9.2791834e-7 0 1 1.41422,0 l 14.02242,14.022427 a 1,1 90 0 1 0,1.414214 L 99.288913,97.899653 A 0.41421169,0.41421169 22.50009 0 1 98.581809,97.60676 Z" />
+					<g>
+						<path
+							d="m 37.567043,82.46297 6.304129,-6.304128 a 1.0000001,1.0000001 1.855832e-6 0 1 1.414214,0 l 6.322838,6.322838 a 0.4135046,0.4135046 112.53468 0 1 -0.292892,0.705896 L 37.859935,83.171288 A 0.41492284,0.41492284 67.534682 0 1 37.567043,82.46297 Z" />
+						<path
+							d="m 97.874719,53.003771 -6.304132,6.304132 a 1,1 0 0 1 -1.414214,0 l -6.322835,-6.322835 a 0.41350486,0.41350486 112.53467 0 1 0.292892,-0.705897 l 13.455397,0.01628 a 0.41492262,0.41492262 67.534668 0 1 0.292892,0.708317 z" />
+					</g>
+					<path
+						d="M 45.286411,28.434167 67.027149,6.6934288 a 1.0000001,1.0000001 180 0 1 1.414214,-1e-7 L 82.46379,20.715854 a 1.014226,1.014226 89.595337 0 1 0.01006,1.424131 L 68.815398,36.189851 a 2.5334563,2.5334563 112.65065 0 0 -0.716431,1.716836 l -0.26121,13.473845 a 2.3495435,2.3495435 68.055312 0 0 0.687724,1.706919 l 21.740745,21.740745 a 2.4142002,2.4142002 67.500112 0 1 0.707103,1.707107 l -1.12e-4,28.704887 a 2.4142561,2.4142561 112.49987 0 1 -0.707105,1.70711 l -21.82475,21.82513 a 0.99999144,0.99999144 179.99975 0 1 -1.414208,0 L 52.948358,114.69364 a 1.0000003,1.0000003 89.999992 0 1 0,-1.41422 L 66.970716,99.257056 A 2.4456148,2.4456148 112.76057 0 0 67.686919,97.54999 L 67.809394,84.085413 A 2.3834953,2.3834953 67.760577 0 0 67.111383,82.378347 L 45.370553,60.637518 a 2.4235749,2.4235749 67.421709 0 1 -0.70984,-1.707103 L 44.582037,30.14127 a 2.4049137,2.4049137 112.42171 0 1 0.704374,-1.707103 z" />
+				</g>
+			</svg>
+			<p>S-Hub<span> by <span>JaxCore</span></span></p>
+		</a>
+		<div aria-hidden="true" id="navbar-items">
+			<span id="toggle" class="navbar-item no-select material-symbols-outlined">Dark_mode</span>
+			<a class="navbar-item navbar-button no-select" href="https://s-hub.jaxcore.app">
+				<span class="material-symbols-outlined">Login</span>
+				<span >Sign in</span>
+			</a>
+		</div>
+	</nav>
+	
+	<!-- ------------------------------- Content ------------------------------- -->
+	<div aria-hidden="true" class="body-divider" id="home">
+		<hr>
+		</hr>
+	</div>
+	<div class="body-container" id="s1">
+		<div class="marquees">
+			<div class="marquee">
+				<div class="marquee--inner">
+				  <span>
+					<div class="orb"></div><div class="orb red"></div><div class="orb yellow"></div><div class="orb blue"></div><div class="orb orange"></div>
+				  </span>
+				  <span>
+					<div class="orb"></div><div class="orb red"></div><div class="orb yellow"></div><div class="orb blue"></div><div class="orb orange"></div>
+				  </span>
+				</div>
+			</div>
+			<div class="marquee">
+				<div class="marquee--inner">
+				  <span>
+					<div class="orb"></div><div class="orb red"></div><div class="orb yellow"></div><div class="orb blue"></div><div class="orb orange"></div>
+				  </span>
+				  <span>
+					<div class="orb"></div><div class="orb red"></div><div class="orb yellow"></div><div class="orb blue"></div><div class="orb orange"></div>
+				  </span>
+				</div>
+			</div>
+		</div>
+		<div class="header-content core">
+			<div class="header-blend"></div>
+			<h1>Get & share beautiful setups in mere <span class="coregrad-string">seconds.</span></h1>
+			<p>S Hub is the go-to place to discover and showcase your Windows environment setup
+			</p>
+			<a class="no-select" href="https://s-hub.jaxcore.app">
+				<p>Explore</p>
+				<span class="material-symbols-outlined">arrow_forward_ios</span>
+			</a>
+		</div>
+	</div>
+	<div aria-hidden="true" class="body-divider" id="about">
+		<hr>
+		</hr>
+	</div>
+	<div class="body-container" id="s2">
+		<div aria-hidden="true" class="background-image">
+		</div>
+		<div class="about-core">
+			<h2>S-HUB SHARING</h2>
+			<h1>Convenient and friendly.</h1>
+			<div class="about-card-grid">
+				<div class="about-card" style="--order: 0;">
+					<span class="material-symbols-outlined">Share</span>
+					<h3>Share & browse</h3>
+					<p>Find your ideal setup or upload your own with minimal steps!</p>
+				</div>
+				<div class="about-card" style="--order: 1;">
+					<span class="material-symbols-outlined">Download_Done</span>
+					<h3>Simple installation</h3>
+					<p>Download a package file and import it in Core. Everything is automated.
+					</p>
+				</div>
+				<div class="about-card" style="--order: 2;">
+					<span class="material-symbols-outlined">Stars</span>
+					<h3>Open submissions & rating</h3>
+					<p>S-Hub is community-driven, add & like what you want! This isn’t a journalist site!</p>
+				</div>
+				<div class="about-card" style="--order: 3;">
+					<span class="material-symbols-outlined">favorite</span>
+					<h3>Active community</h3>
+					<p>Questions? Suggestions? We’re always available to listen to your feedback!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div aria-hidden="true" class="body-divider" id="footer">
+		<hr>
+		</hr>
+	</div>
 </body>
 
 </html>
