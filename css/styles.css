@@ -534,6 +534,7 @@ img, .no-select {
 
 #s2 {
   display: flex;
+  height: calc(100vh - var(--divider-size) * 2 + 1px);
 }
 
 #s2 > * {
@@ -547,7 +548,7 @@ img, .no-select {
 .background-image img {
   position: relative;
   left: -200px;
-  width: 963.92px;
+  width: 800px;
   transition: all 2s cubic-bezier(0.22, 1, 0.36, 1) 0.1s;
   translate: -20%;
   filter: drop-shadow(0px 2px 10px rgba(var(--color-accent-1), 0.5));
@@ -631,6 +632,10 @@ img, .no-select {
 }
 
 @media only screen and (max-width: 1300px) {
+  #s2 {
+    height: max-content;
+  }
+  
   #s2 > * {
     width: 100%;
   }
@@ -764,6 +769,9 @@ img, .no-select {
 }
 #footer-top-right > * {
   transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+#footer-top-right > a > svg {
+  fill: var(--color-subtext);
 }
 
 #footer-top-right > *:hover {
