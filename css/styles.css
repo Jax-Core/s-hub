@@ -595,6 +595,12 @@ img, .no-select {
   opacity: 0.2;
 }
 
+@media (pointer: none) {
+  .about-card-grid:hover .about-card {
+    opacity: initial;
+  }
+}
+
 .about-card {
   scale: 0;
   rotate: -10deg;
