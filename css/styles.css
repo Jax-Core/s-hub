@@ -686,10 +686,172 @@ img, .no-select {
 }
 
 /* -------------------------------------------------------------------------- */
-/*                                 Coming soon                                */
+/*                                     SHP                                    */
 /* -------------------------------------------------------------------------- */
 
 #s3 {
+  flex-direction: column;
+  padding: 0 100px;
+}
+
+#s3 > h1, #s3 > p {
+  text-align: center;
+}
+
+#s3 h1, #s3 h1 > span {
+  font-size: var(--text-6);
+  margin: 0 0 30px 0;
+}
+
+#shp-box {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  margin: 40px 0 0 0;
+  background-color: var(--color-section_bg);
+  border: var(--size-section_border) solid var(--color-section_border);
+  border-radius: var(--rounding-size);
+  transition: width 1s cubic-bezier(0.22, 1, 0.36, 1);
+  cursor: pointer;
+}
+
+#shp-box.active {
+  width: 50%;
+}
+
+#shp-box > * {
+  position: absolute;
+  transition: opacity 0.5s;
+}
+
+/* ------------------------------ shp contents ------------------------------ */
+
+#shp-box.active .shp-notactive {
+  opacity: 0;
+}
+
+#shp-box .shp-active {
+  opacity: 0;
+}
+
+#shp-box.active .shp-active {
+  opacity: 1;
+}
+
+/* --------------------------- not active contents -------------------------- */
+
+.shp-notactive {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.shp-notactive > span {
+  font-size: 64px !important;
+  margin: 0 0 10px 0;
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.shp-notactive > p:last-of-type {
+  font-size: var(--text--1);
+}
+
+/* ----------------------------- active contents ---------------------------- */
+
+.shp-active {
+  padding: 20px 20px;
+  width: 100%;
+}
+
+.shp-active > ul {
+  list-style: none;
+}
+
+.shp-active > ul > li {
+  border-bottom: 1px solid var(--color-fg_border);
+  margin-bottom: 10px;
+  padding: 5px 0;
+}
+
+.shp-active > ul > li * {
+  font-size: var(--text-1);
+  margin-right: 10px;
+  display: inline;
+}
+
+.shp-active > ul > li > svg {
+  margin-right: 10px;
+  width: 20px;
+  fill: var(--color-text);
+  vertical-align: middle;
+}
+
+/* -------------------------------- Quick tip ------------------------------- */
+
+#shp-qt {
+  position: relative;
+  left: 150px;
+  top: -50px;
+  background-color: var(--color-extreme);
+  color: #FFF;
+  border-radius: calc(var(--rounding-size) / 2);
+  padding: 10px 30px;
+  background-image: var(--coregrad);
+  box-shadow: 0px 0px 12px 0px rgba(var(--color-accent-1), 0.5);
+  transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#shp-qt.active {
+  left: 0px;
+  top: 20px;
+}
+
+#shp-qt::before {
+  content: "";
+  position: absolute;
+  top: calc(100% / 2 - 8px);
+  left: calc(-1 * 8px * 2);
+  z-index: 1;
+  border: solid 8px transparent;
+  border-right-color: rgb(var(--color-accent-1));
+  opacity: 1;
+}
+
+#shp-qt.active::before {
+  opacity: 0;
+}
+
+
+@media only screen and (max-width: 1300px) {
+  #shp-box.active {
+    width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 450px) {
+  #shp-qt {
+    left: 100px;
+  }
+  
+  #shp-box.active {
+    width: 320px;
+  }
+
+  #s3 h1, #s3 h1 > span {
+    font-size: var(--text-3);
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Coming soon                                */
+/* -------------------------------------------------------------------------- */
+
+#s4 {
   flex-direction: column;
   padding: 0 100px;
   text-align: left;
@@ -699,24 +861,24 @@ img, .no-select {
   padding: 0px 25%;
 }
 
-#s3 h1 {
+#s4 h1 {
   font-size: var(--text-4);
   margin: 0 0 20px 0;
 }
 
-#s3 div {
+#s4 div {
   transition: translate 1s cubic-bezier(0.22, 1, 0.36, 1) calc(75ms * var(--order)),
   opacity 1s cubic-bezier(0.22, 1, 0.36, 1) calc(75ms * var(--order));
   translate: -5%;
   opacity: 0;
 }
-#s3.body-container-visible div {
+#s4.body-container-visible div {
   translate: 0;
   opacity: 1;
 }
 
 @media only screen and (max-width: 450px) {
-  #s3 {
+  #s4 {
     padding: 0px 20%;
   }
 }

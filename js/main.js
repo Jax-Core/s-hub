@@ -1,5 +1,7 @@
 const toggle = document.querySelector("#toggle");
+const shpToggle = document.querySelector(".shp");
 toggle.addEventListener("click", modeSwitch);
+shpToggle.addEventListener("click", toggleExpandSHP);
 
 let isLight = true;
 let storedLight = localStorage.getItem('data-isLight');
@@ -12,6 +14,17 @@ function modeSwitch() {
   console.log(localStorage.getItem('data-isLight'))
   var rootElement = document.body;
   rootElement.classList.toggle("dark-mode");
+}
+
+let isExpanded = false;
+const shpQT = document.getElementById('shp-qt');
+const shpBox = document.getElementById('shp-box');
+
+function toggleExpandSHP() {
+  isExpanded = !isExpanded;
+  isExpanded ? shpQT.innerText = "You can import a setup with all of these at once with a .SHP package!" : shpQT.innerText = "Click me!";
+  shpBox.classList.toggle('active');
+  shpQT.classList.toggle('active');
 }
 
 const observer = new IntersectionObserver((entries) => {
